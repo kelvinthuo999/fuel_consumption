@@ -42,8 +42,20 @@ int main()
 			price = 200.00;
 			average = 10.00;
 			ttl_amnt = ((distance / average) * price);
-			printf("A safari of %d km using a %s will consume fuel totalling Ksh.%f\n", distance, vehicle, ttl_amnt);
+			printf("A safari of %d km using a %s will consume fuel totalling Ksh.%.2f\n", distance, vehicle, ttl_amnt);
 		}
+		else if (strcmp(fuel, "DIESEL") == 0)
+		{
+			price = 150.00;
+			average = 8.00;
+			ttl_amnt = ((distance / average) * price);
+			printf("A safari of %d km using a %s will consume fuel totalling Ksh.%.2f\n", distance, vehicle, ttl_amnt);
+		}
+		else
+		{
+			printf("Enter a valid type of fuel from the given choices");
+		}
+
 	}
 
 
