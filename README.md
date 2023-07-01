@@ -1,10 +1,10 @@
 # Fuel Consumption
 
-	Fuel consumption is a program to help determine adequate amount of fuel required to cover a specific set distance. 
+Fuel consumption is a program to help determine adequate amount of fuel required to cover a specific set distance. 
 This is a borrowed idea from the concept that airplanes use to calculate the amount of fuel required before the plane takes off from the ground.
 	
 
-	Having knowledge of the amount of fuel to be used in a safari reduces surprises such as fuel shortage. 
+   Having knowledge of the amount of fuel to be used in a safari reduces surprises such as fuel shortage. 
 Running out of fuel mid-safari can be dangerous and inconveniencing, especially in remote area and unfavourable weather conditions. Calculating the amount of fuel required before the safari ensures that a person avoid such inconveniences.
 	
 
