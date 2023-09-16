@@ -5,8 +5,9 @@
 #include <stdbool.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 
 void getFlt(const char *prompt, float *value_input);
-/* void getStr(char *prompt, *str, len); */
+void getStr(const char *prompt, char *str_input, int max_len);
 
 #endif /* KELVIN */

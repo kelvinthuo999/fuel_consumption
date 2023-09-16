@@ -42,3 +42,39 @@ void getFlt(const char *prompt, float *value_input)
 		}
 	} while (!validInput);
 }
+
+/**
+ * getStr - fetch string input from the user
+ * Return: Void
+ */
+
+void getStr(const char *prompt, char *str_input, int max_len)
+{
+	/* variable declaration */
+	char temp_arr[max_len]; /* temp buffer to hold user input */
+	bool validInput = false;
+
+	do {
+		printf("%s: ",prompt);
+
+		/* fetch user input */
+		if (scanf("%s", temp_arr) == 1)
+		{
+			if (strlen(temp_arr) <= max_len - 1)
+			{
+				validInput = true;
+				strcpy(str_input, temp_arr);
+			}
+			else
+			{
+				printf("Input is too long.\n");
+			}
+		}
+		else
+		{
+			scanf("%*[^\n]");
+			scanf("%*c");
+			fprintf(stderr, "Error reading input. Please try again.\n");
+		}
+	} while (!validInput);
+}
