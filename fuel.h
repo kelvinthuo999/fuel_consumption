@@ -9,5 +9,6 @@
 
 void getFlt(const char *prompt, float *value_input);
 void getStr(const char *prompt, char *str_input, int max_len);
+void strtrim(char *str);
 
 #endif /* KELVIN */

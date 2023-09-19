@@ -60,6 +60,8 @@ void getStr(const char *prompt, char *str_input, int max_len)
 		/* fetch user input */
 		if (scanf("%s", temp_arr) == 1)
 		{
+			strtrim(temp_arr);
+
 			if (strlen(temp_arr) <= max_len - 1)
 			{
 				validInput = true;
@@ -77,4 +79,31 @@ void getStr(const char *prompt, char *str_input, int max_len)
 			fprintf(stderr, "Error reading input. Please try again.\n");
 		}
 	} while (!validInput);
+}
+
+/**
+ * strtrim - function to remove whitespaces
+ * Return: void
+ */
+
+void strtrim(char *str)
+{
+	int i;
+	int start = 0;
+	int end = strlen(str) - 1;
+
+	while (isspace(str[start]))
+	{
+		start++;
+	}
+	while (end > start && isspace(str[end]))
+	{
+		end--;
+	}
+
+	for (i = start; i <= end; i++)
+	{
+		str[i - start] = tolower(str[i]);
+	}
+	str[end - start + 1] = '\0';
 }
