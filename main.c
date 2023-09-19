@@ -11,7 +11,7 @@ int main(void)
 	char veh_type[20];
 	/*char fuel_type[20];*/
 
-	printf("\t\t\t\t\t Fuel Calculator\n");
+	printf("\033[1;36m \t\t\ttFuel Consumption\033[0m\n");
 	getFlt("Enter the distance to be traveled", &distance);
 	printf("The distance to be traveled is %.2f.\n", distance);
 
