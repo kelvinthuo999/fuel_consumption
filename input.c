@@ -55,7 +55,7 @@ void getStr(const char *prompt, char *str_input, int max_len)
 	bool validInput = false;
 
 	do {
-		printf("%s: ",prompt);
+		printf("%s",prompt);
 
 		/* fetch user input */
 		if (scanf("%s", temp_arr) == 1)
