@@ -14,7 +14,7 @@ void getFlt(const char *prompt, float *value_input)
 
 	/* Check if value is integer(or float) and positive */
 	do {
-		printf("%s:", prompt);
+		printf("%s: ", prompt);
 		scanf("%s", input);
 
 		validInput = true;
