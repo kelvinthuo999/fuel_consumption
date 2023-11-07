@@ -17,3 +17,5 @@ stops are eliminated resulting in saving time and money.
 Finally, having enough fuel for a safari gives an individual *peace of mind*. Simple doubts about having enough fuel for the safari 
 are eliminated leaving the driver with room to focus on the road and enjoy the journey.
 
+![Diagram](./fuel_consumption.jpg)
+
