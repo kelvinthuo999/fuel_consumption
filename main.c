@@ -1,5 +1,8 @@
 #include "fuel.h"
-
+#define TRUCK 5
+#define SUV 9
+#define PETROL 200
+#define DIESEL 100
 /* main - program to calculate the fuel consumption
  * Return: 0(success)
  */
@@ -21,38 +24,40 @@ int main(void)
 	getStr("Enter the type of vehicle to be used for the safari: ", veh_type, 20);
 	getStr("Enter the type of fuel the vehicle use: ", fuel_type, 20);
 
-	if (strcmp(fuel_type, 'petrol') == 0)
+	if (strcmp(fuel_type, "petrol") == 0)
 	{
-		fuel_price = 217.00;
+		fuel_price = PETROL;
 	} 
 	else
 	{
-		fuel_price = 205.00;
+		fuel_price = DIESEL;
 	}
-	if (strcmp(veh_type, 'truck') == 0)
+	if (strcmp(veh_type, "truck") == 0)
 	{
-		avg_cons = 5;
+		avg_cons = TRUCK;
 	}
-	else if (strcmp(veh_type, 'suv') == 0)
+	else if (strcmp(veh_type, "suv") == 0)
 	{
-		avg_cons = 9;
+		avg_cons = SUV;
 	}
 	else
 	{
-		avg_cons = 12;
+		avg_cons = 10;
 	}
 	
 	fuel_litres = distance / avg_cons;
 	cash_amout = fuel_litres * fuel_price;
 	
+	printf("The amount of fuel to be used is %.2f", fuel_litres);
+	printf("\nThe amount to be used is %.2f", cash_amout);
 	printf("\nThe vehicle to be use is a %s.", veh_type);
 	printf("\nThe fuel to be used is %s.", fuel_type);
 	printf("\nThe distance to be traveled is %.2f.\n", distance);
 
 	
 
-	getStr("Enter string input: ", veh_type, 20);
-	printf("You entered: %s\n", veh_type);
+	/* getStr("Enter string input: ", veh_type, 20);*/
+	/* printf("You entered: %s\n", veh_type);*/
 
 	return (0);
 }
